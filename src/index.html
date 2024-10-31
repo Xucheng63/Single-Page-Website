@@ -1,13 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Information</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <script src="js/main.js" defer></script> 
+        <nav id="mainNavbar" class="navbar">
+            <a href="#" class="navbar-brand">MP1</a>
+            <div class="" id="navLinks">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="#Home" class="navbar-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#About" class="navbar-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Products" class="navbar-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Videos" class="navbar-link">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Influence" class="navbar-link">Influence</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="Home">
+        <div class="video-background">
+            <video playsinline autoplay muted loop src="first.mp4"></video>
+            <section id="Home">
+            <div class="overlay">
+                <h1>Nintendo</h1>
+            </div>
+            </section>
+        </div>
+    </section>
+        <section id="About">
+            <div>
+                <h2 class="color">About Nintendo</h2>
+                <p class="color">Nintendo, founded in 1889 and formally established in 1947, is a Japanese company mainly engaged in the development of video game hardware and software, headquartered in Tokyo City, Nan-ku Kamitohað «´ Ritachi 11-1, mainly engaged in the development of video game hardware and software, is one of the three giants of the video game industry, modern video game industry.</p>
+                <p class="color">Nintendo started out as a producer of flowers. In 1977, it officially entered the home game console market. In 1983, the home game console FC was launched, causing a huge sensation. In 1985, the FC game Super Mario Brothers was launched, which achieved excellent commercial results. Since then, Nintendo has been deeply invested in the game market, and has successively launched home game consoles such as SFC, N64, NGC, Wii, WiiU, Switch, and handheld game consoles such as Game&Watch, GB, GBA, GBASP, NDS, 3DS, and Switch Lite. In addition, he has been involved in the development or publication of numerous game series, such as Super Mario Brothers, The Legend of Zelda, Pokemon, Mittrod, Fire Emblem, and Star Kirby. As of March 2024, approximately 852 million consoles and 5.793 billion copies of game software have been sold worldwide.</p>
+            </div>   
+        </section>
+
+        <section id="Products">
+            <h2 class="section color">Products</h2>
+            <section class="">
+            <div class="">
+                <div class="flex-container">
+                <div class="col-6">
+                    <img src="Mario.jpg" alt="" class="img-fluid modal-trigger" data-modal="modal-1">
+                </div>
+                <div class="col-6 ">
+                        <h2 class="inner color">The Super Mario Brothers</h2>
+                        <p class="lead color">Super Mario Brothers is a side-scrolling action game for Family Computer developed by Nintendo's Intelligence Development Division. One day, the great turtles with powerful magic invaded the peaceful kingdom where the mushrooms lived. The honest mushroom family has been transformed into rocks, bricks or pen vegetables and other shapes by the cool overlord, and the mushroom kingdom is about to perish. Can unlock the magic of the mushrooms, let them wake up, only the princess of the mushroom kingdom - Princess Peach blossom. However, she was captured by the great evil Lord Cool Overlord. In order to bring down the turtle family, rescue the peach blossom princess, and bring back peace to the mushroom kingdom, Mario decided to stand up and challenge the cool overlord.</p>
+                </div>
+                </div>
+            </div>
+            </section>
+            <section class="">
+            <div class="">
+                <div class="flex-container">
+                    <div class="col-6 ">
+                        <h2 class="inner color">The Legend of Zelda</h2>
+                        <p class="lead color">The Legend of Zelda is a series of games produced and published by Nintendo since 1986. The game is set in a fictional fantasy world, and for most of the game players will control Link and embark on adventures across the land of Helalu in order to rescue Princess Zelda from enemies such as Ganondorf.</p>
+                    </div>
+                    <div class="col-6">
+                        <img src="Zelda.jpg" alt="" class="img-fluid modal-trigger" data-modal="modal-2">
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="">
+            <div class="">
+                <div class="flex-container">
+                <div class="col-6">
+                    <img src="pokemon.jpg" alt="" class="img-fluid modal-trigger" data-modal="modal-3">
+                </div>
+                <div class="col-6 ">
+                        <h2 class="inner color">Pokemon</h2>
+                        <p class="lead color">Pokemon is a series of games developed by Game Freak and Creatures Inc. and published by Nintendo as a major part of Pokemon media. The original Game Boy role-playing game was released in Japan in 1996. The Pokemon series has been used throughout Nintendo's console generations. Games in the series are usually released in pairs, with remastered versions often appearing several years after the release of the original game. The main series consists of role-playing games, while the side series includes other genres, such as action role-playing games, puzzle games, and Tamagotchi. February 27 is "Pokemon Day".</p>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <div id="modal-1" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <p>The Super Mario Brothers</p>
+                    <img src="Mario.jpg" alt="Super Mario">
+                </div>
+            </div>
+            <div id="modal-2" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <p> The Legend of Zelda</p>
+                    <img src="Zelda.jpg" alt="The Legend of Zelda">
+                </div>
+            </div>
+            <div id="modal-3" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <p>Pokemon</p>
+                    <img src="pokemon.jpg" alt="The Legend of Zelda">
+                </div>
+            </div>
+        </section>
+
+        <section id="Videos" class="">
+            <h2 class="section color">Game Videos</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <video controls src="second.mp4"></video>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item active">
+                        <video controls src="third.mp4"></video>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item active">
+                        <video controls src="first.mp4"></video>
+                    </div>
+                </div>
+                <a class="carousel-control prev"  role="button" data-slide="prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control next"  role="button" data-slide="next">
+                    <i class="fas fa-arrow-right"></i>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="Influence">
+            <h2 class="section color">Influence</h2>
+            <div class="multi-column">
+                <p class="color">As a popular series, the Pokemon series has undoubtedly left its mark in popular culture. The Pokemon featured in the series have also become pop culture ICONS: two different Pikachu balloons in the Macy's Thanksgiving Day Parade, All Nippon Airways' Pokemon jet, thousands of spin-off merchandise, the Pokemon parks in Nagoya and Taipei, and more.</p>
+                <p class="color">As of March 31, 2013, the Pokemon series has sold 245 million copies, making it one of the best-selling games in gaming history. Guinness World Records awarded Pokemon games eight records in the 2008 Guinness World Records Gamer Edition, including "the most successful RPG series of all time" and "the game series with the most spin-off movies."</p>
+                <p class="color">Japan Memorial Day Association recognized February 27 as "Pokemon Day".</p>
+            </div>
+        </section>
+
+
+
+        <section id="background-image-section">
+            <div class="background-image-section-content">
+            </div>
+        </section>
+
+            <footer>
+                <i class="fas  fa-user"></i>
+                <p>Author: Xucheng Yu<br>
+                    "xy63@illinois.edu"</p>
+                <a href="https://www.instagram.com/yuxucheng12/"><i class="fab fa-instagram"></i></a>
+            </footer>
     </body>
 </html>

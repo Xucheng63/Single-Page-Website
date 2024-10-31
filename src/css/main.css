@@ -1,0 +1,288 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0%;
+}
+
+.video-background {
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
+}
+.video-background video {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.overlay h1 {
+  margin: 0;
+  font-size: 2vw;
+  text-shadow: 2px 2px 4px #000;
+  letter-spacing: 1rem;
+}
+
+#About {
+  text-align: center;
+}
+#About div {
+  margin: auto;
+  width: 50%;
+  height: 30%;
+  font-size: 1.25vw;
+  transition: 1.5s;
+}
+#About div:hover {
+  border-color: greenyellow;
+  border-width: 3px;
+  border-style: dashed;
+  border-left-style: solid;
+}
+
+h2 {
+  text-align: center;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  flex: 0 0 calc(50% - 10px);
+  margin: 5px;
+}
+
+.lead {
+  text-align: center;
+  font-size: 1.25vw;
+  margin: auto;
+}
+
+.inner {
+  font-size: 2vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: larger;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-size: 1.5vw;
+}
+.navbar-link:hover {
+  background-color: #EA1C2C;
+}
+.navbar-item {
+  margin: 0;
+}
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #333;
+}
+footer i {
+  font-size: 3vw;
+  color: white;
+}
+
+.section {
+  font-size: 2vw;
+}
+
+.color::selection {
+  color: aqua;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel-inner {
+  display: flex;
+  width: 100%;
+}
+.carousel-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+.carousel-item.active {
+  display: block;
+}
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 100;
+}
+.carousel-control.prev {
+  left: 0;
+  transition: 1s;
+}
+.carousel-control.prev:hover {
+  font-size: 3vw;
+}
+.carousel-control.next {
+  right: 0;
+  transition: 1s;
+}
+.carousel-control.next:hover {
+  font-size: 3vw;
+}
+
+video {
+  width: 100%;
+  height: 40vw;
+}
+
+.navbar-shrink {
+  padding: 5px 0;
+  background-color: rgba(51, 51, 51, 0.9);
+  height: 2%;
+}
+.navbar-shrink .navbar-link {
+  font-size: 1vw;
+}
+.navbar-shrink .navbar-brand {
+  font-size: 1vw;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1500;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: black;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  position: relative;
+  text-align: center;
+}
+.modal-content img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-content p {
+  font-size: 1.5vw;
+}
+.modal .close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .close-button:hover, .modal .close-button:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-link.active {
+  color: #EA1C2C;
+  background-color: transparent;
+}
+
+#background-image-section {
+  background-image: url("fixed.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vw;
+  width: 30vw;
+  margin: auto;
+  position: relative;
+}
+#background-image-section-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.multi-column {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 1px solid #ccc;
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+.multi-column .color {
+  color: white;
+  break-inside: avoid-column;
+  page-break-inside: avoid;
+  orphans: 2;
+  widows: 2;
+  font-size: 1.25vw;
+}
+
+/*# sourceMappingURL=main.css.map */

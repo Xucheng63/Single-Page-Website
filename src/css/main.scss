@@ -1,1 +1,315 @@
-/* Your SCSS here. */
+
+$primary-color: #333;
+$navbar-shrink-bg-color: rgba(51, 51, 51, 0.9);
+$navbar-link-hover-bg-color: #EA1C2C;
+$video-background-overlay-color: rgba(0, 0, 0, 0.3);
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0%;
+}
+
+.video-background {
+    video {
+        width: 100%;
+        height: auto; 
+    }
+
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    background-color: $video-background-overlay-color; 
+    z-index: 10; 
+
+    h1 {
+        margin: 0;
+        font-size: 2vw;
+        text-shadow: 2px 2px 4px #000;
+        letter-spacing: 1rem; 
+    }
+}
+
+#About {
+    text-align: center;
+
+    div {
+        margin: auto;
+        width: 50%;
+        height: 30%;
+        font-size: 1.25vw;
+        transition: 1.5s;
+
+        &:hover {
+            border-color: greenyellow;
+            border-width: 3px;
+            border-style: dashed;
+            border-left-style: solid;
+        }
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.col-6 {
+    flex: 0 0 calc(50% - 10px);
+    margin: 5px;
+}
+
+.lead {
+    text-align: center;
+    font-size: 1.25vw; 
+    margin: auto; 
+}
+
+.inner {
+    font-size: 2vw; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: $primary-color; 
+    color: white; 
+    padding: 0; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    font-size: larger;
+
+    &-brand {
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5vw;
+    }
+
+    &-link {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block; 
+        font-size: 1.5vw;
+
+        &:hover {
+            background-color: $navbar-link-hover-bg-color; 
+        }
+    }
+    &-item {
+        margin: 0; 
+    }
+    &-nav {
+        list-style-type: none;
+        display: flex; 
+        margin: 0; 
+        padding: 0; 
+    }
+
+}
+
+footer {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; 
+    background-color: $primary-color;
+    & i {
+        font-size: 3vw;
+        color: white;
+      }
+}
+
+.section {
+    font-size: 2vw;
+}
+
+.color::selection {
+    color: aqua;
+}
+
+.carousel {
+    position: relative;
+    width: 80%; 
+    margin: auto;
+    overflow: hidden; 
+
+    &-inner {
+        display: flex;
+        width: 100%;
+    }
+
+    &-item {
+        flex: 0 0 100%; 
+        max-width: 100%;
+        height: auto; 
+        display: none; 
+
+        &.active {
+            display: block; 
+        }
+    }
+
+    &-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 100;
+
+        &.prev {
+            left: 0;
+            transition: 1s;
+            &:hover {
+                font-size: 3vw;
+            }
+        }
+
+        &.next {
+            right: 0;
+            transition: 1s;
+            &:hover {
+                font-size: 3vw;
+            }
+        }
+    }
+}
+
+video {
+    width: 100%; 
+    height: 40vw; 
+}
+
+.navbar-shrink {
+    padding: 5px 0; 
+    background-color: $navbar-shrink-bg-color; 
+    height: 2%;
+
+    .navbar-link {
+        font-size: 1vw; 
+    }
+
+    .navbar-brand {
+        font-size: 1vw; 
+    }
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1500; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+
+    &-content {
+        background-color: black;
+        margin: 15% auto; 
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%; 
+        position: relative;
+        text-align: center;
+
+        img {
+            width: 100%; 
+            max-width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+
+        p {
+            font-size: 1.5vw;
+        }
+    }
+
+    .close-button {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.navbar-link.active {
+    color: $navbar-link-hover-bg-color; 
+    background-color: transparent; 
+}
+
+#background-image-section {
+    background-image: url('../assets/image.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vw; 
+    width: 30vw;
+    margin: auto;
+    position: relative; 
+
+    &-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; 
+        text-align: center;
+    }
+}
+
+.multi-column {
+    column-count: 3; 
+    column-gap: 40px; 
+    column-rule: 1px solid #ccc; 
+    width: 80%; 
+    max-width: 1000px; 
+    margin: 20px auto; 
+
+    .color {
+        color: white; 
+        break-inside: avoid-column; 
+        page-break-inside: avoid; 
+        orphans: 2; 
+        widows: 2; 
+        font-size: 1.25vw;}
+    }
